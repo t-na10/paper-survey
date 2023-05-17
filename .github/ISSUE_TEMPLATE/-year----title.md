@@ -1,7 +1,6 @@
 ---
 name: "[year] : title"
 about: author
-title: Reading
 labels: ''
 assignees: ''
 
