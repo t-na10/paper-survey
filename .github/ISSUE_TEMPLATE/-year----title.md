@@ -2,7 +2,6 @@
 name: "[year] : title"
 about: author
 labels: ''
-assignees: ''
 
 ---
 
