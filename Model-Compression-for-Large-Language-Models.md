@@ -32,3 +32,43 @@
 - **Low-Rank Factorization; 低ランク因数分解**
   - TensorGPT [Xu et al., 2023]
 
+
+## 量子化（Quantization）について
+
+大規模言語モデル（LLM）の計算コストとメモリ使用量を削減するための重要な手法であり、2つの主要なアプローチがある。
+
+### 1. 量子化対応トレーニング（Quantization-Aware Training; QAT）
+トレーニングプロセス中に量子化の影響を考慮する手法です。これにより、モデルは量子化ノイズに適応し、精度の低下を最小限に抑えることができる。
+この手法の代表例には以下がある：
+- LLM-QAT (Liu et al., 2023)
+- PEQA (Kim et al., 2023a)
+- QLORA (Dettmers et al., 2023a)
+### 2. ポストトレーニング量子化（Post-Training Quantization; PTQ）
+モデルのトレーニング後に量子化を行う手法です。以下の二つの主要なアプローチがある
+- **重み量子化（Weight Quantization）:**
+モデルの重みパラメータを低ビット表現に変換する手法。
+以下の研究が挙げられている：
+  - LUT-GEMM (Park et al., 2022)
+  - LLM.int8() (Dettmers et al., 2022)
+  - GPTQ (Frantar et al., 2022)
+  - AWQ (Lin et al., 2023)
+  - OWQ (Lee et al., 2023)
+  - SpQR (Dettmers et al., 2023b)
+  - SqueezeLLM (Kim et al., 2023b)
+  - QuIP (Chee et al., 2023)
+  - SignRound (Cheng et al., 2023)
+- **重みとアクティベーション量子化（Weight and Activation Quantization）:**
+モデルの重みとアクティベーションの両方を低ビット表現に変換する手法。
+以下の研究が挙げられている：
+  - ZeroQuant (Yao et al., 2022)
+  - SmoothQuant (Xiao et al., 2022)
+  - PRTQ (Yuan et al., 2023)
+  - Olive (Gupta et al., 2023)
+  - ZeroQuant-V2 (Yao et al., 2023)
+  - Outlier Suppression (Wei et al., 2023)
+  - MoPQ (Zhang et al., 2023b)
+  - ZeroQuant-PF (Wu et al., 2023b)
+  - FPTQ (Li et al., 2023a)
+  - QuantEase (Bechdin et al., 2023)
+  - Norm Tweaking (Li et al., 2023b)
+  - OmniQuant (Shao et al., 2023)
