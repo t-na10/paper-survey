@@ -17,7 +17,7 @@
     - MT-CoT [Li et al., 2022], CoT Prompting [Magister et al., 2023], Fine-tune-CoT [Ho et al., 2023], SSLM [Hu et al., 2023]
     - SCOTT [Wang et al., 2023], Distilling Step-by-Step [Hsieh et al., 2023]
     - SOCRATIC CoT [Ishihara et al., 2023], PaD [Zhu et al., 2023], LMTWA [Saha et al., 2023]
-  - Instruction Following; 命令フォロー
+  - Instruction Following;  指令実行
     - Lion [Jiang et al., 2023], LaMini-LM [Wu et al., 2023a]
 
 - **Quantization; 量子化**
